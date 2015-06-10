@@ -1,0 +1,697 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'bebasregular';
+    src: url('BEBAS___-webfont.eot');
+    src: url('BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BEBAS___-webfont.woff') format('woff'),
+         url('BEBAS___-webfont.ttf') format('truetype'),
+         url('BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'jenna_sueregular';
+    src: url('jennasue-webfont.eot');
+    src: url('jennasue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('jennasue-webfont.woff2') format('woff2'),
+         url('jennasue-webfont.woff') format('woff'),
+         url('jennasue-webfont.ttf') format('truetype'),
+         url('jennasue-webfont.svg#jenna_sueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'cheddar_jackregular';
+    src: url('cheddar_jack-webfont.eot');
+    src: url('cheddar_jack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cheddar_jack-webfont.woff2') format('woff2'),
+         url('cheddar_jack-webfont.woff') format('woff'),
+         url('cheddar_jack-webfont.ttf') format('truetype'),
+         url('cheddar_jack-webfont.svg#cheddar_jackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.clear
+{
+	clear: both;
+}
+
+
+
+#wrap
+{
+    background-color: #f4f4f4;
+    width: 85%;
+    margin: 0 auto;
+}
+
+body
+{
+    list-style: none;
+    height: 100vh;
+}
+
+@media screen and (max-width: 750px)
+{
+    #wrap
+   {
+      width: 100%;
+   } 
+}
+
+
+
+
+
+
+header nav 
+{
+    position: fixed;
+    background-color: white;
+    height: 120px;
+    width: 100%;
+    z-index: 9;
+}
+
+header ul li 
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 80px;
+    font-size: 1em;
+}
+
+header ul li a, header ul li p 
+{
+    font-family: Bebas, verdana, arial, sans-serif; 
+    vertical-align: top;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    color: #737373;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+header ul li a:hover
+{
+    color: #d20060;
+}
+
+header ul li p 
+{
+    font-family: Bebas, verdana, arial, sans-serif;
+    color: #a6a6a6;
+    letter-spacing: 1px;
+}
+
+
+.back
+{
+    width: 20px;
+    opacity: 0.6;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+
+#logo-portefolio
+{
+    width: 60px;
+    margin: -32px 10px 8px 10px;
+}
+
+#banner
+{
+    position: relative;
+    width: 100%;
+    top: 120px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 750px)
+{
+    header nav 
+    {
+        height: 80px;
+    }
+    
+    header ul li 
+    {
+        margin-top: 40px;
+    }
+
+    #banner
+    {
+        top: 80px;
+    }
+
+    #logo-portefolio
+    {
+        width: 50px;
+        margin: -22px 10px 8px 20px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    header nav 
+    {
+        height: 60px;
+    }
+    
+    header ul li 
+    {
+        margin-top: 30px;
+    }
+
+    #banner
+    {
+        top: 60px;
+    }
+
+    #logo-portefolio
+    {
+        width: 45px;
+        margin: -18px 10px 8px 20px;
+    }
+
+    header ul li 
+    {
+        font-size: 0.8em;
+        margin-top: 25px;
+    }
+
+}
+
+/*********************************ARROW*************************/
+#fixed-arrow 
+{
+    width: 85%;
+    position: fixed;
+    z-index: 9;
+    height: 90px;
+}
+
+#fixed-arrow div
+{
+    position: relative;
+    top: 130%;
+}
+
+#arrow-left
+{
+    height: 90px;
+    width: 40px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    cursor: pointer;
+}
+
+#arrow-right
+{
+    height: 90px;
+    width: 40px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+}
+
+#arrow-left img, #arrow-right img
+{
+    width: 15px;
+    margin: 35px 10px;
+}
+
+@media screen and (max-width: 750px)
+{
+    #fixed-arrow
+    {
+        width: 100%;
+    }
+
+    #fixed-arrow div
+    {
+        position: relative;
+        top: 85%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    #arrow-left, #arrow-right
+    {
+        height: 45px;
+        width: 30px;
+    }
+
+    #arrow-left img, #arrow-right img
+    {
+        margin: 12px 10px;
+    }
+
+     #fixed-arrow div
+    {
+        top: 63%;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    #fixed-arrow
+    {
+        position: absolute;
+        z-index: 1;
+    }
+
+}
+/******************************PAGES***********************/
+
+#description 
+{
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 10%;
+}
+
+#resume
+{
+    padding-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#description-date
+{
+    position: absolute;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    font-size: 2em;
+    margin-top: 80px;
+    font-family: Bebas, verdana, arial, sans-serif;
+    letter-spacing: 2px;
+    color: #a6a6a6;
+}
+
+#description-title-project
+{
+    font-size: 4.5em;
+    padding-top: 60px;
+    text-align: center;
+    font-family:  Verdana, arial, sans-serif;
+    color: #585858;
+    margin: 0 auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 1150px)
+{
+    #description-title-project
+    {
+        font-size: 4em;
+    }
+
+    #description-date
+    {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 1050px)
+{
+    #description-title-project
+    {
+        font-size: 3.4em;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    #description-title-project
+    {
+        font-size: 3em;
+    }
+
+    #description-date
+    {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    #description-title-project
+    {
+        font-size: 2.8em;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    #description-title-project
+    {
+        font-size: 2.4em;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    #description-title-project
+    {
+        font-size: 2em;
+        margin-top: 14px;
+    }
+
+
+    #description-date
+    {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    #description-title-project
+    {
+        font-size: 1.6em;
+        margin-top: 14px;
+    }
+
+
+    #description-date
+    {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    #description-title-project
+    {
+        font-size: 1.5em;
+        margin-top: 18px;
+    }
+
+
+    #description-date
+    {
+        font-size: 1em;
+    }
+}
+
+#description #resume p 
+{
+    font-family: Helvetica, Verdana, arial, sans-serif;
+    color: #585858;
+    line-height: 20px;
+    width: 95%;
+    left: 0;
+    right: 0;
+    margin: 50px auto 10px auto;
+}
+
+#description #description-banner-logo
+{
+    width: 100%;
+    margin: 70px 0 70px 0;
+}
+
+#description #description-img
+{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#graphic-design-link
+{
+    background-color: #323a45;
+    position: relative;
+    width: 170px;
+    text-align: center;
+    height: 35px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding-top: 15px;
+    transition: 0.5s;
+}
+
+#graphic-design-link a 
+{
+    font-family: bebas, Verdana, arial, sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-decoration: none;
+}
+
+#graphic-design-link:hover
+{
+    background-color: #a6a6a6;
+}
+
+#graphic-design-link img
+{
+    width: 25px;
+    float: left;
+    margin: 0 10px;
+}
+
+#graphic-design, #graphic-info
+{
+    margin: 0 70px;
+}
+
+.graphic-picto
+{
+    float: left;
+    width: 30px;
+    opacity: 0.4;
+}
+
+#graphic-design h4, #graphic-info h4
+{
+    font-family: bebas, Verdana, arial, sans-serif;
+    color: #a6a6a6;
+    word-spacing: 5px;
+    padding: 7px 0 0 45px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#graphic-info h4
+{
+    margin: 50px 0;
+}
+
+#graphic-design p 
+{
+    font-size: 0.9em;
+    width: 45%;
+    float: left;
+    font-family: Helvetica, Verdana, arial, sans-serif;
+    color: #585858;
+    line-height: 18px;
+    margin-bottom: 20px;
+    margin-right: 5%;
+}
+
+#graphic-info h5
+{
+    font-family: bebas, verdana, arial, sans-serif;
+    color: #a6a6a6;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+#graphic-info ul
+{ 
+    float: left;
+    font-family: Helvetica, Verdana, arial, sans-serif;
+    color: #585858;
+    font-size: 0.8em;
+    line-height: 20px;
+    margin-right: 40px;
+}
+
+.info-column
+{
+    vertical-align: top;
+    width: 33%;
+    float: left;
+}
+
+#graphic-info
+{
+    height: 250px;
+    width: 85%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+/******************************EMPTIO***********************/
+
+
+#description iframe
+{
+    width: 100%;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 700px)
+{
+    #description iframe
+    {
+       margin-top: 0;
+    } 
+}
+
+
+@media screen and (max-width: 500px)
+{
+    #description iframe
+    {
+       margin-top: -50px;
+       width: 247px;
+       height: 496px;
+       margin-right: 20%;
+       margin-left: 20%;
+    } 
+}
+
+@media screen and (max-width: 450px)
+{
+    #description iframe
+    {
+       margin-right: 17%;
+       margin-left: 17%;
+    } 
+}
+
+@media screen and (max-width: 400px)
+{
+    #description iframe
+    {
+       margin-right: 15%;
+       margin-left: 15%;
+    } 
+}
+
+/******************************DO APPS***********************/
+
+
+/******************************OLIPIDE***********************/
+
+#resume-olipide
+{
+    padding-bottom: 70px;
+}
+
+/******************************CATALOGUE PLG***********************/
+
+.issuuembed
+{
+    width: 650px;
+    height: 459px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.issuu-catalogue
+{
+    width: 100%;
+}
+
+@media screen and (max-width: 760px)
+{
+    .issuuembed
+    {
+        width: 487.5px;
+        height: 344px;
+    }  
+}
+
+@media screen and (max-width: 580px)
+{
+    .issuuembed
+    {
+        width: 433px;
+        height: 306px;
+    }  
+}
+
+@media screen and (max-width: 510px)
+{
+    .issuuembed
+    {
+        width: 325px;
+        height: 229.5px;
+    }  
+}
+
+
+
+
+
+

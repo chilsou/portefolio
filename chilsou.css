@@ -199,7 +199,7 @@ strong
 	}
 }
 
-@media screen and (max-width: 550px)
+@media screen and (max-width: 550px) and handheld
 {
 	#menu span 
 	{
@@ -399,7 +399,7 @@ strong
 	}
 }
 
-@media screen and (max-width: 550px)
+@media screen and (max-width: 550px) and handheld
 {
 	#contain-description
 	{
@@ -449,7 +449,7 @@ strong
 	}
 }
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 450px) and handheld
 {
 	.picto-portefolio
 	{
@@ -633,7 +633,7 @@ strong
 	}
 }
 
-@media screen and (max-width: 570px)
+@media screen and (max-width: 570px) and handheld
 {
 	.box 
 	{
@@ -665,7 +665,7 @@ strong
    
 }
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 500px) and handheld
 {
 	.box .boxinner .titlebox img
 	{
@@ -679,7 +679,7 @@ strong
 	}
 }
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 450px) and handheld
 {
 	.boxinner .titlebox
 	{
@@ -727,7 +727,7 @@ strong
 	margin-left: 7.5%;
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 600px) and handheld
 {
 	#map-img-max-width700
 	{
@@ -779,7 +779,7 @@ strong
 	letter-spacing: 2px;
 }
 
-@media screen and (max-width: 560px)
+@media screen and (max-width: 560px) and handheld
 {
 	.coordinates
 	{
@@ -797,7 +797,7 @@ strong
 	}
 }
 
-@media screen and (max-width: 430px)
+@media screen and (max-width: 430px) and handheld
 {
 
 	.coordinates
@@ -935,7 +935,7 @@ strong
 	}	
 }
 
-@media screen and (max-width: 750px)
+@media screen and (max-width: 750px) and handheld
 {
 	#contact-form
 	{
